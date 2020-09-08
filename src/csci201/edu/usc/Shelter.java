@@ -4,7 +4,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 
-public class Shelter {
+public class Shelter extends IntegerComparable {
 
 	@SerializedName("chiralFrequency")
 	@Expose
@@ -71,6 +71,16 @@ public class Shelter {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	@Override
+	public int getCompareValue() {
+		return this.chiralFrequency;
+	}
+	
+	@Override
+	public String toString() {
+		return "ChiralFrequency=" + getChiralFrequency();
 	}
 
 }

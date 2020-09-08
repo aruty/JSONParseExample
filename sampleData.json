@@ -45,5 +45,37 @@
 		"name": "Ozean Shelter",
 		"phone": "+1 (812) 517-3382",
 		"address": "514 Verona Street, Ellerslie, United Cities of America, 9"
+	},
+	{
+		"chiralFrequency": 6,
+		"timefall": false,
+		"guid": "f2ac81a3-dca4-4c3f-a7c4-193e32fc7b9e",
+		"name": "Maineland Shelter",
+		"phone": "+1 (804) 504-2189",
+		"address": "977 Bay Street, Duryea, United Cities of America, 3695"
+	},
+	{
+		"chiralFrequency": 7,
+		"timefall": true,
+		"guid": "9125ab11-db16-4c2e-b84f-fdd504cb6d64",
+		"name": "Dreamia Shelter",
+		"phone": "+1 (827) 597-2957",
+		"address": "527 Polhemus Place, Temperanceville, United Cities of Ame"
+	},
+	{
+		"chiralFrequency": 8,
+		"timefall": true,
+		"guid": "885b4a72-a20f-4690-af66-772e21a7264c",
+		"name": "Ozean Shelter",
+		"phone": "+1 (812) 517-3382",
+		"address": "514 Verona Street, Ellerslie, United Cities of America, 9"
+	},
+	{
+		"chiralFrequency": 9,
+		"timefall": true,
+		"guid": "885b4a72-a20f-4690-af66-772e21a7264c",
+		"name": "Ozean Shelter",
+		"phone": "+1 (812) 517-3382",
+		"address": "514 Verona Street, Ellerslie, United Cities of America, 9"
 	}
 ]

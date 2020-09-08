@@ -28,7 +28,7 @@ public class Main {
 		System.out.println("Please provide support chiral frequencies:");
 		String str = reader.readLine();
 		List<String> nums= Arrays.asList(str.split(","));
-		return nums.stream().map(s -> Integer.parseInt(s)).collect(Collectors.toList());
+		return nums.stream().map(s -> Integer.parseInt(s.trim())).collect(Collectors.toList());
 	}
 	
 	public static void main(String[] args) {
@@ -36,6 +36,18 @@ public class Main {
 		try {
 			WristCuff wristCuff = getWristCuff();
 			List<Integer> list = getChiralFrequencies();
+			wristCuff.findShelter(list);
+			Shelter shelterToDelete = new Shelter();
+			
+			// Testing Delete operation
+			System.out.println("Deleting shelter with Chiral Frequency of 5");
+			System.out.println("List before 5 delete\n--------------");
+			wristCuff.printList();
+			shelterToDelete.setChiralFrequency(5);
+			wristCuff.deleteShelter(shelterToDelete);
+			System.out.println("\nList after 5 delete\n--------------");
+			wristCuff.printList();
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
